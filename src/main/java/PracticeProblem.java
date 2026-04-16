@@ -63,11 +63,11 @@ class Person {
 	private String eyeColour;
 	private String hairColour;
 
-	public Person (String name, int age, int weight, int height, String eyeColour, String hairColour) {
+	public Person (String name, int age, int height, int weight, String eyeColour, String hairColour) {
 		this.name = name;
 		this.age = age;
-		this.weight = weight;
 		this.height = height;
+		this.weight = weight;
 		this.eyeColour = eyeColour;
 		this.hairColour = hairColour;
 	}
@@ -86,9 +86,9 @@ class Person {
 	}
 	//these are supposed to be opposite but the tests are broken so it prefers these
 	public int getHeight () {
-		return weight;
+		return height;
 	}
 	public int getWeight () {
-		return height;
+		return weight;
 	}
 }
